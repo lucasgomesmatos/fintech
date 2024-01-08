@@ -1,0 +1,84 @@
+html {
+  --color-1: #463220;
+  --color-2: #66593c;
+  --color-3: #eceadd;
+  --color-4: #f7f8f5;
+  --color-5: #ffffff;
+  --gap-s: 0.625rem;
+  --gap: 1.25rem;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  color: var(--color-2);
+  background: var(--color-4);
+}
+
+.box {
+  padding: var(--gap);
+  border-radius: var(--gap);
+  background: var(--color-5);
+}
+
+button {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap);
+}
+
+.flex > * {
+  flex: 1;
+}
+
+.mb {
+  margin-bottom: var(--gap);
+}
+
+.bg-1 {
+  background: var(--color-1);
+}
+
+.bg-2 {
+  background: var(--color-2);
+}
+
+.bg-3 {
+  background: var(--color-3);
+}
+
+.bg-4 {
+  background: var(--color-4);
+}
+
+.bg-5 {
+  background: var(--color-5);
+}
+
+.container {
+  display: grid;
+  padding: var(--gap);
+  gap: var(--gap);
+}
