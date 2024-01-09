@@ -42,6 +42,7 @@ export const MonthBtn = ({ month }: MonthBtnProps) => {
     color: 'var(--color-2)',
     fontWeight: 'bold',
     textTransform: 'capitalize',
+    marginBottom: 'var(--gap)',
   };
 
   return (

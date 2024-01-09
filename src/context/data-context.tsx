@@ -2,7 +2,7 @@ import { PropsWithChildren, createContext, useContext, useState } from 'react';
 import { useFetch } from '../hooks/use-fetch';
 import { Constants } from '../shared/constants/constants';
 
-type SaleType = {
+export type SaleType = {
   id: number;
   nome: string;
   preco: number;
