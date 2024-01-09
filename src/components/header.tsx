@@ -1,9 +1,13 @@
 import { DateRage } from './date-rage';
+import { Months } from './months';
 
 export const Header = () => {
   return (
-    <div>
-      <DateRage />
-    </div>
+    <header>
+      <div className="mb">
+        <DateRage />
+      </div>
+      <Months />
+    </header>
   );
 };

@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useData } from '../context/data-context';
 import { Input } from './input';
 
 export const DateRage = () => {
-  const [initialDate, setInitialDate] = useState('');
-  const [finalDate, setFinalDate] = useState('');
+  const { initialDate, handleInitialDate, finalDate, handleFinalDate } =
+    useData();
 
   return (
     <form onSubmit={(e) => e.preventDefault()} className="box flex">
@@ -12,14 +12,14 @@ export const DateRage = () => {
         id="inicio"
         type="date"
         value={initialDate}
-        onChange={({ target }) => setInitialDate(target.value)}
+        onChange={({ target }) => handleInitialDate(target.value)}
       />
       <Input
         label="Final"
         id="final"
         type="date"
         value={finalDate}
-        onChange={({ target }) => setFinalDate(target.value)}
+        onChange={({ target }) => handleFinalDate(target.value)}
       />
     </form>
   );
