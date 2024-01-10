@@ -1,3 +1,4 @@
+import { SalesChart } from '../components/sales-chart';
 import { useData } from '../context/data-context';
 
 export const Summary = () => {
@@ -44,7 +45,9 @@ export const Summary = () => {
           </span>
         </div>
       </div>
-      <div className="box mb">graficos</div>
+      <div className="box mb">
+        <SalesChart />
+      </div>
     </section>
   );
 };
